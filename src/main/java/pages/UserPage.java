@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
  */
 public class UserPage extends BasePage {
 
+
     @FindBy(xpath = "//span[contains(text(),'Написать письмо')]")
     public WebElement theWriteALetterBtn;
 
