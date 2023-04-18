@@ -8,7 +8,7 @@ import org.openqa.selenium.support.FindBy;
 public class UserPage extends BasePage {
 
 
-    @FindBy(xpath = "//span[contains(text(),'Написать письмо')]")
+    @FindBy(xpath = "//span[@class='compose-button__txt']")
     public WebElement theWriteALetterBtn;
 
     @FindBy(xpath = "//input[@style='width: 12px;']")
@@ -20,7 +20,7 @@ public class UserPage extends BasePage {
     @FindBy(xpath = "//div[@role='textbox']")
     public WebElement inputMessage;
 
-    @FindBy(xpath = "//span[contains(text(),'Отправить')]")
+    @FindBy(xpath = "(//span[@class='vkuiButton__in'])[1]")
     public WebElement sendBtn;
 
     @FindBy(xpath = "//a[@class='layer__link']")
